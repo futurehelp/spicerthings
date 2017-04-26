@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="spicerthings" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,154 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tor-4H-KMH">
+                                <rect key="frame" x="16" y="206" width="343" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="c96-wP-uTd"/>
+                                    <constraint firstAttribute="width" constant="343" id="reQ-ZX-7hL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAt-2q-vuD">
+                                <rect key="frame" x="16" y="324" width="343" height="97"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="4Iq-xv-jAk"/>
+                                    <constraint firstAttribute="height" constant="97" id="fLd-1o-OJo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSm-py-Har">
+                                <rect key="frame" x="16" y="274" width="343" height="42"/>
+                                <color key="backgroundColor" red="0.99160850050000005" green="0.58425903320000006" blue="0.42443481090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="1eb-J6-2Py"/>
+                                    <constraint firstAttribute="width" constant="343" id="xCw-i4-C98"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <state key="normal" title="GET SPICY!"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonGetSpicerThings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yuW-pF-DD6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAr-Cx-xro">
+                                <rect key="frame" x="16" y="429" width="112" height="38"/>
+                                <color key="backgroundColor" red="0.99160850050000005" green="0.58425903320000006" blue="0.42443481090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="RIP-HZ-jJb"/>
+                                    <constraint firstAttribute="height" constant="38" id="u0y-l5-dmK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="TWEET"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="038-Jl-EXC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="straight.png" translatesAutoresizingMaskIntoConstraints="NO" id="lQA-4h-FMG">
+                                <rect key="frame" x="16" y="39" width="343" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="AFC-Ox-eqs"/>
+                                    <constraint firstAttribute="width" constant="343" id="xTX-Cf-CqG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drs-iy-TgU">
+                                <rect key="frame" x="247" y="429" width="112" height="38"/>
+                                <color key="backgroundColor" red="0.99160850050000005" green="0.58425903320000006" blue="0.42443481090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="LkM-a8-3sO"/>
+                                    <constraint firstAttribute="width" constant="112" id="YCG-FJ-azX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="COPY"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonCopy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ies-bF-zBD"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spicer-things-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="qm8-nU-zbJ">
+                                <rect key="frame" x="42" y="499" width="291" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="2jK-Mb-JaQ"/>
+                                    <constraint firstAttribute="height" constant="67" id="ZaX-lA-kh7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="qm8-nU-zbJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="3gw-43-CZG"/>
+                            <constraint firstItem="lQA-4h-FMG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8Xa-Sd-d5e"/>
+                            <constraint firstItem="lQA-4h-FMG" firstAttribute="top" secondItem="qm8-nU-zbJ" secondAttribute="bottom" constant="-527" id="H7r-P6-ckM"/>
+                            <constraint firstItem="qm8-nU-zbJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="479" id="I3Z-jQ-bzp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="drs-iy-TgU" secondAttribute="trailing" id="KWZ-MF-XJU"/>
+                            <constraint firstItem="XAt-2q-vuD" firstAttribute="top" secondItem="qSm-py-Har" secondAttribute="bottom" constant="8" id="Q6D-64-aqR"/>
+                            <constraint firstItem="tor-4H-KMH" firstAttribute="top" secondItem="lQA-4h-FMG" secondAttribute="bottom" constant="8" id="SmU-Ss-9NT"/>
+                            <constraint firstItem="XAt-2q-vuD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TWz-Ym-ZXh"/>
+                            <constraint firstItem="qSm-py-Har" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="U1h-08-EVr"/>
+                            <constraint firstItem="drs-iy-TgU" firstAttribute="top" secondItem="XAt-2q-vuD" secondAttribute="bottom" constant="8" id="YRb-N5-iOb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qm8-nU-zbJ" secondAttribute="trailing" constant="26" id="aqq-YP-lGg"/>
+                            <constraint firstItem="tor-4H-KMH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bOX-AC-TJT"/>
+                            <constraint firstItem="drs-iy-TgU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="brp-pc-VDM"/>
+                            <constraint firstItem="lQA-4h-FMG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eXv-W6-5wM"/>
+                            <constraint firstItem="qSm-py-Har" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gJP-yR-S3R"/>
+                            <constraint firstItem="WAr-Cx-xro" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iuP-bJ-KnJ"/>
+                            <constraint firstItem="qSm-py-Har" firstAttribute="top" secondItem="tor-4H-KMH" secondAttribute="bottom" constant="8" id="nMh-b3-XId"/>
+                            <constraint firstItem="tor-4H-KMH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qcg-Cb-x9O"/>
+                            <constraint firstItem="WAr-Cx-xro" firstAttribute="top" secondItem="XAt-2q-vuD" secondAttribute="bottom" constant="8" id="umA-LO-Ney"/>
+                            <constraint firstItem="XAt-2q-vuD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xkp-cG-T8f"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageViewSpicer" destination="lQA-4h-FMG" id="LFH-5n-IQy"/>
+                        <outlet property="textFieldSpicerFinish" destination="XAt-2q-vuD" id="Xsa-hc-zXC"/>
+                        <outlet property="textFieldSpicerThings" destination="tor-4H-KMH" id="pDb-tZ-Az8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="spicer-things-logo.png" width="396" height="158"/>
+        <image name="straight.png" width="800" height="533"/>
+    </resources>
 </document>

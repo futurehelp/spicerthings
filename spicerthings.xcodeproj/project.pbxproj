@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3CB9BC41EB01D5D0035C870 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CB9BC31EB01D5D0035C870 /* Constants.swift */; };
 		D3E300021EA6E67D003F7AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E300011EA6E67D003F7AFE /* AppDelegate.swift */; };
 		D3E300041EA6E67D003F7AFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E300031EA6E67D003F7AFE /* ViewController.swift */; };
 		D3E300071EA6E67D003F7AFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E300051EA6E67D003F7AFE /* Main.storyboard */; };
 		D3E300091EA6E67D003F7AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E300081EA6E67D003F7AFE /* Assets.xcassets */; };
 		D3E3000C1EA6E67D003F7AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E3000A1EA6E67D003F7AFE /* LaunchScreen.storyboard */; };
 		D3E300171EA6E67D003F7AFE /* spicerthingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E300161EA6E67D003F7AFE /* spicerthingsTests.swift */; };
+		D3E300241EA6E69D003F7AFE /* SpicerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E300231EA6E69D003F7AFE /* SpicerItem.swift */; };
+		D3E3002B1EA70C0C003F7AFE /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E300281EA70C0C003F7AFE /* left.png */; };
+		D3E3002C1EA70C0C003F7AFE /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E300291EA70C0C003F7AFE /* right.png */; };
+		D3E3002D1EA70C0C003F7AFE /* straight.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E3002A1EA70C0C003F7AFE /* straight.png */; };
+		D3E3002F1EA72FA0003F7AFE /* hipster-background.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E3002E1EA72FA0003F7AFE /* hipster-background.png */; };
+		D3E300391EA741B1003F7AFE /* spicer-things-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E300381EA741B1003F7AFE /* spicer-things-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3CB9BC31EB01D5D0035C870 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D3E300011EA6E67D003F7AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3E300031EA6E67D003F7AFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3E300061EA6E67D003F7AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +43,12 @@
 		D3E300121EA6E67D003F7AFE /* spicerthingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spicerthingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E300161EA6E67D003F7AFE /* spicerthingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spicerthingsTests.swift; sourceTree = "<group>"; };
 		D3E300181EA6E67D003F7AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E300231EA6E69D003F7AFE /* SpicerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpicerItem.swift; sourceTree = "<group>"; };
+		D3E300281EA70C0C003F7AFE /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		D3E300291EA70C0C003F7AFE /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		D3E3002A1EA70C0C003F7AFE /* straight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = straight.png; sourceTree = "<group>"; };
+		D3E3002E1EA72FA0003F7AFE /* hipster-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hipster-background.png"; sourceTree = "<group>"; };
+		D3E300381EA741B1003F7AFE /* spicer-things-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spicer-things-logo.png"; sourceTree = "<group>"; };
 		D3E3FFFE1EA6E67D003F7AFE /* spicerthings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spicerthings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -59,7 +73,10 @@
 		D3E300001EA6E67D003F7AFE /* spicerthings */ = {
 			isa = PBXGroup;
 			children = (
+				D3E300221EA6E689003F7AFE /* models */,
+				D3E300211EA6E682003F7AFE /* images */,
 				D3E300011EA6E67D003F7AFE /* AppDelegate.swift */,
+				D3CB9BC31EB01D5D0035C870 /* Constants.swift */,
 				D3E300031EA6E67D003F7AFE /* ViewController.swift */,
 				D3E300051EA6E67D003F7AFE /* Main.storyboard */,
 				D3E300081EA6E67D003F7AFE /* Assets.xcassets */,
@@ -76,6 +93,26 @@
 				D3E300181EA6E67D003F7AFE /* Info.plist */,
 			);
 			path = spicerthingsTests;
+			sourceTree = "<group>";
+		};
+		D3E300211EA6E682003F7AFE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D3E300381EA741B1003F7AFE /* spicer-things-logo.png */,
+				D3E3002E1EA72FA0003F7AFE /* hipster-background.png */,
+				D3E300281EA70C0C003F7AFE /* left.png */,
+				D3E3002A1EA70C0C003F7AFE /* straight.png */,
+				D3E300291EA70C0C003F7AFE /* right.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		D3E300221EA6E689003F7AFE /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D3E300231EA6E69D003F7AFE /* SpicerItem.swift */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 		D3E3FFF51EA6E67D003F7AFE = {
@@ -189,8 +226,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3E3000C1EA6E67D003F7AFE /* LaunchScreen.storyboard in Resources */,
+				D3E3002C1EA70C0C003F7AFE /* right.png in Resources */,
+				D3E3002F1EA72FA0003F7AFE /* hipster-background.png in Resources */,
+				D3E3002B1EA70C0C003F7AFE /* left.png in Resources */,
 				D3E300091EA6E67D003F7AFE /* Assets.xcassets in Resources */,
+				D3E3002D1EA70C0C003F7AFE /* straight.png in Resources */,
 				D3E300071EA6E67D003F7AFE /* Main.storyboard in Resources */,
+				D3E300391EA741B1003F7AFE /* spicer-things-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3E300041EA6E67D003F7AFE /* ViewController.swift in Sources */,
+				D3E300241EA6E69D003F7AFE /* SpicerItem.swift in Sources */,
 				D3E300021EA6E67D003F7AFE /* AppDelegate.swift in Sources */,
+				D3CB9BC41EB01D5D0035C870 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,8 +388,9 @@
 				DEVELOPMENT_TEAM = R3A8MQQ56H;
 				INFOPLIST_FILE = spicerthings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.untitled.spicerthings.spicerthings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.untitled.spicerthings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -357,8 +402,9 @@
 				DEVELOPMENT_TEAM = R3A8MQQ56H;
 				INFOPLIST_FILE = spicerthings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.untitled.spicerthings.spicerthings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.untitled.spicerthings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -403,6 +449,7 @@
 				D3E3001D1EA6E67D003F7AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3E3001E1EA6E67D003F7AFE /* Build configuration list for PBXNativeTarget "spicerthingsTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +458,7 @@
 				D3E300201EA6E67D003F7AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3E3FFF91EA6E67D003F7AFE /* Build configuration list for PBXProject "spicerthings" */ = {
 			isa = XCConfigurationList;
