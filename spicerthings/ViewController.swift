@@ -18,7 +18,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var textFieldSpicerThings: UITextView!
     @IBOutlet weak var textFieldSpicerFinish: UITextView!
     @IBOutlet var tapGesture: UITapGestureRecognizer!
-    var placeholderLabel : UILabel!
+    var labelPlaceHolder : UILabel!
     
     //  SpicerItem object
     var items: [SpicerItem] = []
@@ -57,20 +57,24 @@ class ViewController: UIViewController, UITextViewDelegate {
         backgroundImage.image = UIImage(named: "hipster-background.png")
         self.view.insertSubview(backgroundImage, at: 0)
         
+        //  Define the delegate.
         textFieldSpicerThings.delegate = self as UITextViewDelegate
-        placeholderLabel = UILabel()
-        placeholderLabel.text = "We landed on the moon."
-        placeholderLabel.font = UIFont.italicSystemFont(ofSize: (textFieldSpicerThings.font?.pointSize)!)
-        placeholderLabel.sizeToFit()
-        textFieldSpicerThings.addSubview(placeholderLabel)
-        placeholderLabel.frame.origin = CGPoint(x: 5, y: (textFieldSpicerThings.font?.pointSize)! / 2)
-        placeholderLabel.textColor = UIColor.lightGray
-        placeholderLabel.isHidden = !textFieldSpicerThings.text.isEmpty
+        //  Create a UILabel object.
+        labelPlaceHolder = UILabel()
+        labelPlaceHolder.text = "We landed on the moon."
+        labelPlaceHolder.font = UIFont.italicSystemFont(ofSize: (textFieldSpicerThings.font?.pointSize)!)
+        labelPlaceHolder.sizeToFit()
+        //  Attach the label object to the TextField.
+        textFieldSpicerThings.addSubview(labelPlaceHolder)
+        //  Set the label object properties.
+        labelPlaceHolder.frame.origin = CGPoint(x: 5, y: (textFieldSpicerThings.font?.pointSize)! / 2)
+        labelPlaceHolder.textColor = UIColor.lightGray
+        labelPlaceHolder.isHidden = !textFieldSpicerThings.text.isEmpty
         
     }
-
+    
     func textViewDidChange(_ textView: UITextView) {
-        placeholderLabel.isHidden = !textView.text.isEmpty
+        labelPlaceHolder.isHidden = !textView.text.isEmpty
     }
     
     override func didReceiveMemoryWarning() {
